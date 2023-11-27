@@ -13,15 +13,15 @@ This is a warehouse for SwinTransformerV2-UNet using pytorch framework, can be u
 ## Project Structure
 ```
 ├── datasets: Load datasets
-  ├── mydataset.py: Build the train dataloader and valid dataloader
-  ├── ext_transforms.py: Additional data augmentation methods
+    ├── mydataset.py: Build the train dataloader and valid dataloader
+    ├── ext_transforms.py: Additional data augmentation methods
 ├── models: SwiftFormer Model
-  ├── cbam.py: Construct "CBAM: Convolutional Block Attention Module" module.
-  ├── swintransformerv2.py: Construct "swintransformerv2" module.
-  ├── swinv2UNet.py: Construct "SwinTransformerV2UNet" module.
+    ├── cbam.py: Construct "CBAM: Convolutional Block Attention Module" module.
+    ├── swintransformerv2.py: Construct "swintransformerv2" module.
+    ├── swinv2UNet.py: Construct "SwinTransformerV2UNet" module.
 ├── util: 
-  ├── losses.py: Construct "DiceScore", "DiceBCELoss" and "Dice_th_pred" modules.
-  ├── scheduler.py: Construct a lr_scheduler.
+    ├── losses.py: Construct "DiceScore", "DiceBCELoss" and "Dice_th_pred" modules.
+    ├── scheduler.py: Construct a lr_scheduler.
 ├── engine.py: Function code for a training/validation process.
 ├── model_configs.py: Define config parameters.
 └── train_gpu.py: Training model startup file
